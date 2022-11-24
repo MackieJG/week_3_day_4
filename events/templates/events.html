@@ -1,0 +1,30 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+<h2> All Current Events</h2>
+    <ul>
+        {% for event in events %}
+            <li>
+                <h3>Date</h3>
+                <p> {{ event.date }}</p>
+                <h3>Name</h3>
+                <p>{{ event.name }}</p>
+                <a href="/events/{{ loop.index0 }}">View Event</a>
+                <h3>Number of Guests</h3>
+                <p>{{ event.num_guests }}</p>
+                <h3>Location</h3>
+                <p> {{ event.location }}</p>
+                <h3>Description</h3>
+                <p> {{ event.description }}</p>
+                <h3>Recurring Event</h3>
+                <p>
+                    {% if event.recurring %}
+                        Yes
+                    {% else %}
+                        No 
+                    {% endif %}
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

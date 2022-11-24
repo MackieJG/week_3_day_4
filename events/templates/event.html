@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>Date</h3>
+    <p>{{ event.date }}</p>
+    <h3>Name</h3>
+    <p> {{ event.name }}</p>
+    <h3>Number of Guests</h3>
+    <p>{{ event.num_guests }}</p>
+    <h3>Location</h3>
+    <p>{{ event.location }}</p>
+    <h3>Description</h3>
+    <p>{{ event.description }}</p>
+    <h3>Recurring</h3>
+    <p>{{ event.recurring }}</p>
+{% endblock %}

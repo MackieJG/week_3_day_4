@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2> Add a new event to the planner!</h2>
+
+    <form action="/events" method="post">
+        <label for="event_date">Date</label>
+        <input type="date" name="event_date" id="event_date">
+        <label for="event_name">Name</label>
+        <input type="text" name="event_name" id="event_name">
+        <label for="num_guests">Number of Guests</label>
+        <input type="text" name="event_guests" id="event_guests">
+        <label for="event_location">Location</label>
+        <input type="text" name="event_location" id="event_location">
+        <label for="event_description">Description</label>
+        <input type="text" name="event_description" id="event_description">
+        <label for="event_recurring">Recurring?</label>
+        <input type="checkbox" name="event_recurring" id="event_recurring">
+        <input type="submit" value="Book IT">
+    </form> 
+{% endblock %}
