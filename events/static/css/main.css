@@ -1,3 +1,29 @@
 header {
-    background-color: rgb(rgb(192, 63, 63), rgb(56, 84, 56), rgb(107, 107, 160))
+    background-color: rgb(238, 161, 37);
+    display: flex;
+    justify-content: space-around;
+    color:rgb(20, 13, 13);
+    align-self: center;
 }
+.nav_list ul {
+    list-style: none;
+}
+.nav_list a{
+    color:rgb(26, 19, 7);
+}
+
+
+
+body footer section{
+    background-color: rgb(238, 161, 37);
+    display: flex;
+    justify-content: space-around;
+    color:rgb(20, 13, 13);
+    align-self: center;
+ }
+ .nav_footer ul{
+    list-style: none;
+ }
+ .nav_footer a{
+    color:rgb(26, 19, 7);
+ }
